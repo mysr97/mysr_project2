@@ -1,40 +1,89 @@
 @charset "utf-8";
 
-#img_wr {
-    margin: 0 auto;
-    width: 800px;
-    height: 300px;
-    background-color: antiquewhite;
+#menu {
+    width: 100%;
+    height: 120px;
+    position: fixed;
     display: flex;
+    align-items: center;
+}
+#menu > .logo {
+    width: 20%;
+}
+#menu > .logo > img {
+    width: 100px;
+    margin: 0 0 0 100px;
+    
 }
 
-.img_wr_box1 {
+#menu > .meLi {
+    width: 70%;
+    height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+#menu > .meLi > li {
+    width: auto;
+    line-height: 120px;
+    margin: auto 2%;
+}
+
+#menu > .meLi > li a {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+
+#main_top {
     width: 100%;
-    height: 300px;
-    background-color: aqua;
-    flex-shrink: 4;
+    height: 800px;
+    background-color: #fff;
+    background-image: url("/mysr_project2/img/bg_graphic.png");
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
-.img_wr_box2 {
+
+#main_slide {
     width: 100%;
-    height: 300px;
-    background-color: rosybrown;
-    flex-shrink: 4;
+    height: 700px;
+    background-color: #eee;
+    background-image: url("/mysr_project2/img/bg_graphic_iv.png");
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
-.img_wr_box3 {
+
+#main_stage {
     width: 100%;
-    height: 300px;
-    background-color: teal;
-    flex-shrink: 4;
+    height: 2500px;
+    background-color: #fff;
+    background-image: url("/mysr_project2/img/bg_graphic_g.png");
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
-.img_wr_box4 {
+
+#main_notice {
     width: 100%;
-    height: 300px;
-    background-color: wheat;
-    flex-shrink: 4;
+    height: 1000px;
+    background-color: #ddd;
+    background-image: url("/mysr_project2/img/bg_graphic_g.png");
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
-.wrbg {
-    transition: all 0.7s ease;
+
+#main_entertainment {
+    width: 100%;
+    height: 800px;
+    background-color: olive;
 }
-.wrbg:hover {
-    flex-shrink: 3;
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
 }
