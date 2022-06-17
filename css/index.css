@@ -2,7 +2,7 @@
 
 #menu {
     width: 100%;
-    height: 120px;
+    height: 100px;
     position: fixed;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@
 
 #menu > .meLi {
     width: 70%;
-    height: 120px;
+    height: 100px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -26,7 +26,7 @@
 
 #menu > .meLi > li {
     width: auto;
-    line-height: 120px;
+    line-height: 100px;
     margin: auto 2%;
 }
 
@@ -69,8 +69,8 @@
 #main_notice {
     width: 100%;
     height: 1000px;
-    background-color: #ddd;
-    background-image: url("/mysr_project2/img/bg_graphic_g.png");
+    background-color: gray;
+    background-image: url("/mysr_project2/img/bg_graphic_w.png");
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
