@@ -81,10 +81,44 @@
     background-size:cover;
 }
 
+
 #main_entertainment {
+    margin: 0 auto;
     width: 100%;
-    height: 800px;
-    background-color: olive;
+    height: 600px;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.img_wr_box1 {
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    flex-shrink: 4;
+}
+.img_wr_box2 {
+    width: 100%;
+    height: auto;
+    background-color: rosybrown;
+    flex-shrink: 4;
+}
+.img_wr_box3 {
+    width: 100%;
+    height: auto;
+    background-color: teal;
+    flex-shrink: 4;
+}
+.img_wr_box4 {
+    width: 100%;
+    height: auto;
+    background-color: rosybrown;
+    flex-shrink: 4;
+}
+.wrbg {
+    transition: all 0.7s ease;
+}
+.wrbg:hover {
+    flex-shrink: 3;
 }
 
 footer {
