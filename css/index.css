@@ -83,43 +83,43 @@
 
 
 #main_entertainment {
-    margin: 0 auto;
     width: 100%;
     height: 600px;
-    background-color: antiquewhite;
     display: flex;
+    background-color: antiquewhite;
 }
 
-.img_wr_box1 {
+.en_img_wr {
     width: 100%;
-    height: auto;
-    background-color: aqua;
     flex-shrink: 4;
+    background-color: aquamarine;
 }
-.img_wr_box2 {
-    width: 100%;
-    height: auto;
-    background-color: rosybrown;
-    flex-shrink: 4;
-}
-.img_wr_box3 {
-    width: 100%;
-    height: auto;
-    background-color: teal;
-    flex-shrink: 4;
-}
-.img_wr_box4 {
-    width: 100%;
-    height: auto;
-    background-color: rosybrown;
-    flex-shrink: 4;
-}
-.wrbg {
+.en_img_wr:hover {
+    flex-shrink: 3;
     transition: all 0.7s ease;
 }
-.wrbg:hover {
-    flex-shrink: 3;
+
+.dbl {
+    background-color: coral;
 }
+
+.dbl_one, .dbl_two {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.dbl_ct {
+    width: 100%;
+    flex-shrink: 4;
+    height: 300px;
+}
+.dbl_ct:hover {
+    flex-shrink: 3;
+    transition: all 0.7s ease;
+}
+
+
+
 
 footer {
     width: 100%;
