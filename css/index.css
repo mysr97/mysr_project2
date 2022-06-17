@@ -88,10 +88,14 @@
     display: flex;
     background-color: antiquewhite;
 }
-
-.en_img_wr {
+.en_img_wr{
     width: 100%;
     flex-shrink: 4;
+    background-color: aquamarine;
+}
+.en_img_wr:nth-of-type(1) {
+    width: 100%;
+    flex-shrink: 5;
     background-color: aquamarine;
 }
 .en_img_wr:hover {
