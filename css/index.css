@@ -44,6 +44,8 @@
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
+    background-size:cover; 
+    /* background-size cover 입력해줘야 크기가 화면에 따라 맞춰짐 */
 }
 
 #main_slide {
@@ -54,6 +56,7 @@
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
+    background-size:cover;
 }
 
 #main_stage {
@@ -64,6 +67,7 @@
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
+    background-size:cover;
 }
 
 #main_notice {
@@ -74,6 +78,7 @@
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
+    background-size:cover;
 }
 
 #main_entertainment {
