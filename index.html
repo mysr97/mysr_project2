@@ -16,6 +16,14 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+
+$(window).scroll(function () { 
+    var scrollValue = $(document).scrollTop();
+
+    console.log(scrollValue);
+
+});
+        //menu 스크롤 이동시 css 변경
         $(window).on("scroll", function () {
             if ($(window).scrollTop() >= 700) {
                 $("#menu").css({ "background-color": "rgba(0,0,0,0.7)" });
@@ -27,6 +35,53 @@
                 $("#menu > .meLi > li > a > img").css({"filter" : "none"});
             }
         });
+
+        //main_top 텍스트 나타내기
+        $(function(){
+            $(".top_text").delay(300).animate({opacity:1, left:200},700);
+        });
+
+        //stage box 스크롤 이동시 위치 변경
+        //$(window).on("scroll", function(){
+            if ($(window).scrollTop() >= 1200) {
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"0px 0 0"},"slow");
+            } else if ($(window).scrollTop() >= 1150){
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-30px 0 0"},"slow");
+            } else if ($(window).scrollTop() >= 1100){
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-60px 0 0"},"slow");
+            } else if ($(window).scrollTop() >= 1050){
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-90px 0 0"},"slow");
+            } else if ($(window).scrollTop() >= 1000){
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-120px 0 0"},"slow");
+            } else if ($(window).scrollTop() >= 950){
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-150px 0 0"},"slow");
+            } else if ($(window).scrollTop() >= 900){
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-180px 0 0"},"slow");
+            }else if ($(window).scrollTop() >= 850){
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-210px 0 0"},"slow");
+            } else if ($(window).scrollTop() >= 800){
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-240px 0 0"},"slow");
+            } else if ($(window).scrollTop() >= 750){
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-270px 0 0"},"slow");
+            } else if ($(window).scrollTop() >= 700){
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-300px 0 0"},"slow");
+            } else if ($(window).scrollTop() >= 650){
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-330px 0 0"},"slow");
+            } else{
+                $(".st_box_sm_wr:nth-of-type(2)").css({"margin":"-360px 0 0"});
+            }
+        //});
+
+
+
+            var stTop = $("#main_stage").offset().top - 250;
+            var scroll = $(window).scrollTop();
+            var marV = stTop - 960;
+
+            while(stTop <= 1300) {
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin-top" : marV },"slow");
+            }
+
     </script>
     </head>
     <body>
@@ -49,11 +104,33 @@
             </div>
 
             <div id="main_top">
+                <div class="top_text">
 
+                </div>
             </div>
-            
             <div id="main_stage">
-
+                <div id="stage_wrap">
+                    <div class="stage_text">
+                        스테이지 텍스트
+                    </div>
+                    <div class="st_box_wr">
+                        <div class="st_box_sm_wr">
+                            <div class="st_box">1</div>
+                            <div class="st_box">2</div>
+                            <div class="st_box">3</div>
+                        </div>
+                        <div class="st_box_sm_wr">
+                            <div class="st_box">4</div>
+                            <div class="st_box">5</div>
+                            <div class="st_box">6</div>
+                        </div>
+                        <div class="st_box_sm_wr">
+                            <div class="st_box">7</div>
+                            <div class="st_box">8</div>
+                            <div class="st_box">9</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="main_slide">
