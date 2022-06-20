@@ -35,12 +35,17 @@
     font-size: 1.1em;
 }
 
+#menu > .meLi > li > a > img {
+    width: 20px;
+    display: block;
+}
+
 
 #main_top {
     width: 100%;
     height: 800px;
     background-color: #fff;
-    background-image: url("/mysr_project2/img/bg_graphic.png");
+    background-image: url("../img/bg_graphic.png");
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
@@ -52,7 +57,7 @@
     width: 100%;
     height: 700px;
     background-color: #eee;
-    background-image: url("/mysr_project2/img/bg_graphic_iv.png");
+    background-image: url("../img/bg_graphic_iv.png");
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
@@ -63,7 +68,7 @@
     width: 100%;
     height: 2500px;
     background-color: #fff;
-    background-image: url("/mysr_project2/img/bg_graphic_g.png");
+    background-image: url("../img/bg_graphic_g.png");
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
@@ -74,7 +79,7 @@
     width: 100%;
     height: 1000px;
     background-color: gray;
-    background-image: url("/mysr_project2/img/bg_graphic_w.png");
+    background-image: url("../img/bg_graphic_w.png");
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;

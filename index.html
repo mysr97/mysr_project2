@@ -20,9 +20,11 @@
             if ($(window).scrollTop() >= 700) {
                 $("#menu").css({ "background-color": "rgba(0,0,0,0.7)" });
                 $("#menu > .meLi > li a").css({ "color": "white" });
+                $("#menu > .meLi > li > a > img").css({"filter" : "invert(100%)"});
             } else {
                 $("#menu").css({ "background-color": "transparent" });
                 $("#menu > .meLi > li a").css({ "color": "black" });
+                $("#menu > .meLi > li > a > img").css({"filter" : "none"});
             }
         });
     </script>
@@ -41,8 +43,8 @@
                     <li><a href="#">사업소개</a></li>
                     <li><a href="#">새소식</a></li>
                     <li><a href="#">정보공유</a></li>
-                    <li><a href="#"><img src="" alt="">아이콘</a></li>
-                    <li><a href="#"><img src="" alt="">아이콘</a></li>
+                    <li><a href="#"><img src="img/menu.png" alt="1"></a></li>
+                    <li><a href="#"><img src="img/search.png" alt="2"></a></li>
                 </ul>
             </div>
 
