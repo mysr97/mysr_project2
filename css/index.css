@@ -42,6 +42,7 @@
 }
 
 
+/*여기부터 main_top*/
 #main_top {
     width: 100%;
     height: 850px;
@@ -66,6 +67,8 @@
     opacity: 0;
 }
 
+
+/*여기부터 main_stage*/
 #main_stage {
     width: 100%;
     height: 2450px;
@@ -113,7 +116,6 @@
 }
 
 
-
 #main_stage > #stage_wrap > .st_box_wr {
     width: 100%;
     height: 100%;
@@ -149,16 +151,52 @@
 }
 
 
+/*여기부터 main_slide*/
 #main_slide {
     width: 100%;
-    height: 700px;
+    height: auto;
     background-color: #eee;
     background-image: url("../img/bg_graphic_iv.png");
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
     background-size:cover;
+    position: relative;
+    display: flex;
+    padding: 120px 0;
 }
+
+#m_slide_text {
+    width: 35%;
+    height: auto;
+    padding: 0 10% 0;
+}
+
+#m_slide_wrap {
+    width: 65%;
+    height: auto;
+}
+
+#m_slide_wrap > #m_slide_box {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+#m_slide_wrap > #m_slide_box > .m_slide {
+    width: 280%;
+    height: auto;
+    display: flex;
+}
+#m_slide_wrap > #m_slide_box > .m_slide > li a img  {
+    width: 100%;
+    height: auto;
+    
+}
+/* #m_slide_wrap > .m_slide > li:not(:first-child) {
+    display: none;
+} */
+
 
 #main_notice {
     width: 100%;
@@ -175,18 +213,28 @@
 #main_entertainment {
     width: 100%;
     height: 600px;
-    display: flex;
-    background-color: antiquewhite;
+    margin: 0 auto;
+    background-image: url("../img/bg_graphic_iv.png");
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
+.en_wrap {
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+}
+
 .en_img_wr{
     width: 100%;
     flex-shrink: 4;
-    background-color: aquamarine;
+    background-color: antiquewhite;
 }
 .en_img_wr:nth-of-type(1) {
     width: 100%;
     flex-shrink: 5;
-    background-color: aquamarine;
 }
 .en_img_wr:hover {
     flex-shrink: 3;
@@ -194,7 +242,6 @@
 }
 
 .dbl {
-    background-color: coral;
 }
 
 .dbl_one, .dbl_two {
@@ -206,11 +253,17 @@
     width: 100%;
     flex-shrink: 4;
     height: 300px;
+    overflow: hidden;
+}
+.dbl_ct > img {
+    width: 100%;
+    height: 100%;
 }
 .dbl_ct:hover {
     flex-shrink: 3;
     transition: all 0.7s ease;
 }
+
 
 
 
