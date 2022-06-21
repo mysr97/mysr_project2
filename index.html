@@ -42,45 +42,36 @@ $(window).scroll(function () {
         });
 
         //stage box 스크롤 이동시 위치 변경
-        //$(window).on("scroll", function(){
-            if ($(window).scrollTop() >= 1200) {
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"0px 0 0"},"slow");
-            } else if ($(window).scrollTop() >= 1150){
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-30px 0 0"},"slow");
-            } else if ($(window).scrollTop() >= 1100){
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-60px 0 0"},"slow");
-            } else if ($(window).scrollTop() >= 1050){
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-90px 0 0"},"slow");
-            } else if ($(window).scrollTop() >= 1000){
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-120px 0 0"},"slow");
-            } else if ($(window).scrollTop() >= 950){
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-150px 0 0"},"slow");
-            } else if ($(window).scrollTop() >= 900){
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-180px 0 0"},"slow");
-            }else if ($(window).scrollTop() >= 850){
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-210px 0 0"},"slow");
-            } else if ($(window).scrollTop() >= 800){
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-240px 0 0"},"slow");
-            } else if ($(window).scrollTop() >= 750){
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-270px 0 0"},"slow");
-            } else if ($(window).scrollTop() >= 700){
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-300px 0 0"},"slow");
-            } else if ($(window).scrollTop() >= 650){
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin":"-330px 0 0"},"slow");
-            } else{
-                $(".st_box_sm_wr:nth-of-type(2)").css({"margin":"-360px 0 0"});
-            }
-        //});
-
-
-
-            var stTop = $("#main_stage").offset().top - 250;
-            var scroll = $(window).scrollTop();
-            var marV = stTop - 960;
-
-            while(stTop <= 1300) {
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({"margin-top" : marV },"slow");
-            }
+        //1번째 줄
+        $(window).on("scroll",function(){
+                if ($(window).scrollTop() >= 1700) {
+                    $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 0}, "slow");
+                } else if ($(window).scrollTop() >= 600) {
+                    $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120 + (-12 * (($(window).scrollTop() / 100) - 5)) }, "slow");
+                } else {
+                    $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120}, "slow");
+                }
+            });
+        //2번째 줄
+        $(window).on("scroll",function(){
+                if ($(window).scrollTop() >= 1700) {
+                    $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: 0}, "slow");
+                } else if ($(window).scrollTop() >= 600) {
+                    $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360 + (30 * (($(window).scrollTop() / 100) - 5)) }, "slow");
+                } else {
+                    $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360}, "slow");
+                }
+            });
+        //3번째 줄
+        $(window).on("scroll",function(){
+                if ($(window).scrollTop() >= 1700) {
+                    $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: 0}, "slow");
+                } else if ($(window).scrollTop() >= 600) {
+                    $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240 + (20 * (($(window).scrollTop() / 100) - 5)) }, "slow");
+                } else {
+                    $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240}, "slow");
+                }
+            });
 
     </script>
     </head>
@@ -111,23 +102,28 @@ $(window).scroll(function () {
             <div id="main_stage">
                 <div id="stage_wrap">
                     <div class="stage_text">
-                        스테이지 텍스트
+                        <img src="img/stage_logo.png" alt="st_logo">
+                        <p> 매월 첫째 주 목요일 오전 11시 <br>
+                            예술이 있는 11개의 창작공간에서 <br>
+                            서울 스테이지 11을 만나세요.
+                            <hr>
+                        </p>
                     </div>
                     <div class="st_box_wr">
                         <div class="st_box_sm_wr">
-                            <div class="st_box">1</div>
-                            <div class="st_box">2</div>
-                            <div class="st_box">3</div>
+                            <div class="st_box"><a href="#"><img src="img/poster_1.png" alt=""></a></div>
+                            <div class="st_box"><a href="#"><img src="img/poster_2.png" alt=""></a></div>
+                            <div class="st_box"><a href="#"><img src="img/poster_3.jpg" alt=""></a></div>
                         </div>
                         <div class="st_box_sm_wr">
-                            <div class="st_box">4</div>
-                            <div class="st_box">5</div>
-                            <div class="st_box">6</div>
+                            <div class="st_box"><a href="#"><img src="img/poster_0.jpg" alt=""></a></div>
+                            <div class="st_box"><a href="#"><img src="img/poster_4.jpg" alt=""></a></div>
+                            <div class="st_box"><a href="#"><img src="img/poster_5.jpg" alt=""></a></div>
                         </div>
                         <div class="st_box_sm_wr">
-                            <div class="st_box">7</div>
-                            <div class="st_box">8</div>
-                            <div class="st_box">9</div>
+                            <div class="st_box"><a href="#"><img src="img/poster_6.jpg" alt=""></a></div>
+                            <div class="st_box"><a href="#"><img src="img/poster_7.jpg" alt=""></a></div>
+                            <div class="st_box"><a href="#"><img src="img/poster_8.png" alt=""></a></div>
                         </div>
                     </div>
                 </div>
