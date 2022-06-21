@@ -137,6 +137,12 @@
     background-color: white;
     box-shadow: 0 10px 10px rgba(0,0,0,0.4);
 }
+#main_stage > #stage_wrap > .st_box_wr > .st_box_sm_wr > .st_box:hover {
+    width: 80%;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
 #main_stage > #stage_wrap > .st_box_wr > .st_box_sm_wr > .st_box img {
     width: 100%;
     padding: 20px;
