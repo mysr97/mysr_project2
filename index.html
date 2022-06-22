@@ -73,6 +73,15 @@ $(window).scroll(function () {
                 }
             });
 
+        //entertainment hover 
+        $(function(){
+            $(".dbl_ct").hover(function(){
+                $(this).children("p").css({opacity:1});
+            },function(){
+                $(this).children("p").css({opacity:0});
+            });
+        });
+
     </script>
     </head>
     <body>
@@ -221,14 +230,30 @@ $(window).scroll(function () {
                     <div class="en_img_wr">
                         <div class="dbl_one">
                             <div class="dbl_ct dbl_ct1">
+                                <p>
+                                    <span>문화예술 종합월간지</span>
+                                    <span>문화플러스서울</span>
+                                </p>
                             </div>
                             <div class="dbl_ct dbl_ct2">
+                                <p>
+                                    <span>연극 전문 웹진</span>
+                                    <span>연극in</span>
+                                </p>
                             </div>
                         </div>
                         <div class="dbl_two">
                             <div class="dbl_ct dbl_ct3">
+                                <p>
+                                    <span>무용 전문 웹진</span>
+                                    <span>춤:in</span>
+                                </p>
                             </div>
                             <div class="dbl_ct dbl_ct4">
+                                <p>
+                                    <span>문학 전문 웹진</span>
+                                    <span>비유</span>
+                                </p>
                             </div>
                         </div>
                     </div>
