@@ -82,6 +82,31 @@ $(window).scroll(function () {
             });
         });
 
+        //slide
+        $(function(){
+            function prev() {
+                $(".m_slide li:last").prependTo(".m_slide");
+                $(".m_slide").css({marginLeft:0});
+                $(".m_slide").stop().animate({"margin-left":"-95%"});
+            }
+            function next() {
+                $(".m_slide").stop().animate({"margin-left":"-95%"},function(){
+                    $(".m_slide li:first").appendTo(".m_slide");       
+                    $(".m_slide").css({marginLeft:0});
+                });
+            }
+
+            setInterval(next, 5000);
+
+            $(".prev").click(function(){
+                prev()
+            });
+            
+            $(".next").click(function(){
+                next()
+            });
+        });
+
     </script>
     </head>
     <body>
@@ -139,20 +164,28 @@ $(window).scroll(function () {
             </div>
 
             <div id="main_slide">
-                <div id="m_slide_text">
+                <div class="m_slide_wr_out">
+                <div class="m_slide_text">
                     <h2>슬라이드</h2>
                     <p>내용</p>
                 </div>
-                <div id="m_slide_wrap">
-                    <div id="m_slide_box">
+                <div class="m_slide_wr_in">
+
+                    <div class="m_slide_box">
+                        
                         <ul class="m_slide">
                             <li><a href="#"><img src="img/silde_1.png" alt=""></a></li>
                             <li><a href="#"><img src="img/silde_2.png" alt=""></a></li>
                             <li><a href="#"><img src="img/silde_3.png" alt=""></a></li>
                         </ul>
+
                     </div>
 
+                    <img src="img/arrow2.png" class="prev" alt="prev" >
+                    <img src="img/arrow2.png" class="next" alt="next" style="transform: scaleX(-1);">
+
                 </div>
+            </div>
 
             </div>
 
