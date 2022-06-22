@@ -297,6 +297,19 @@
     background-size: cover;
 }
 
+.dbl_ct1 {
+    background-image: url('../img/entertainment_1.jpg');
+}
+.dbl_ct2 {
+    background-image: url('../img/entertainment_2.jpg');
+}
+.dbl_ct3 {
+    background-image: url('../img/entertainment_3.jpg');
+}
+.dbl_ct4 {
+    background-image: url('../img/entertainment_4.jpg');
+}
+
 .dbl_ct:hover {
     flex-shrink: 3;
     transition: all 0.7s ease;
