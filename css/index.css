@@ -167,7 +167,7 @@
 }
 
 .m_slide_wr_out {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
@@ -179,8 +179,19 @@
     padding: 0 10% 0;
 }
 
+.m_slide_text > h2 {
+    font-size: 5em;
+    font-weight: 800;
+    padding: 0 0 10% 0;
+}
+
+.m_slide_text > p {
+    font-size: 1.2em;
+}
+
 .m_slide_wr_in {
-    width: 65%;
+    width: 60%;
+    margin: 0 0 0 %;
     height: auto;
     position: relative;
 }
@@ -192,7 +203,7 @@
     position: relative;
 }
 .m_slide_wr_in > .m_slide_box > .m_slide {
-    width: 280%;
+    width: 380%;
     height: auto;
     display: flex;
 }
@@ -214,7 +225,7 @@
     opacity: 1;
 }
 .prev{
-    left: 0%;
+    left: %;
 }
 .next {
     right: 10%;
