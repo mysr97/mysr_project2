@@ -89,11 +89,11 @@ $(window).scroll(function () {
         $(function(){
             function prev() {
                 $(".m_slide li:last").prependTo(".m_slide");
-                $(".m_slide").css({marginLeft:0});
-                $(".m_slide").stop().animate({"margin-left":"-95%"});
+                $(".m_slide").css({"margin-left":"-100%"});
+                $(".m_slide").stop().animate({marginLeft:0},"slow");
             }
             function next() {
-                $(".m_slide").stop().animate({"margin-left":"-95%"},function(){
+                $(".m_slide").stop().animate({"margin-left":"-100%"},"slow",function(){
                     $(".m_slide li:first").appendTo(".m_slide");       
                     $(".m_slide").css({marginLeft:0});
                 });
