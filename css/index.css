@@ -45,7 +45,7 @@
 /*여기부터 main_top*/
 #main_top {
     width: 100%;
-    height: 850px;
+    height: 900px;
     background-color: #fff;
     background-image: url("../img/bg_graphic.png");
     background-attachment: fixed;
@@ -53,18 +53,33 @@
     background-repeat: no-repeat;
     background-size:cover; 
     /* background-size cover 입력해줘야 크기가 화면에 따라 맞춰짐 */
-    border-bottom: 1px solid #eee;
     overflow: hidden;
+    text-align: center;
 }
 
 #main_top > .top_text {
-    width: 450px;
-    height: 250px;
-    background-color: aqua;
+    text-align: left;
+    width: auto;
+    height: 300px;
     position: relative;
-    top: 550px;
+    top: 500px;
     left: -150px;
     opacity: 0;
+    font-size: 4.5em;
+    font-weight: 900;
+    color: #f49e00;
+    letter-spacing: 3px;
+}
+#main_top > a {
+}
+#main_top > a > img {
+
+    width: 5%;
+    opacity: 0.5;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
 }
 
 
@@ -78,6 +93,7 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size:cover;
+    overflow: hidden;
 }
 
 #main_stage > #stage_wrap {
@@ -236,7 +252,7 @@
 #main_notice {
     width: 100%;
     height: 700px;
-    background-color: rgb(226, 226, 226);
+    background-color: #eee;
     background-image: url("../img/bg_graphic_w.png");
     background-attachment: fixed;
     background-position: top center;
@@ -308,9 +324,9 @@
     border: none;
     text-align: center;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 600;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .m_noti_wr > .text_noti > .text_noti_menu > .bgon {

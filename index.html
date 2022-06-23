@@ -42,35 +42,38 @@ $(window).scroll(function () {
         });
 
         //stage box 스크롤 이동시 위치 변경
-        //1번째 줄
         $(window).on("scroll",function(){
-                if ($(window).scrollTop() >= 1700) {
-                    $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 0}, "slow");
-                } else if ($(window).scrollTop() >= 600) {
-                    $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120 + (-12 * (($(window).scrollTop() / 100) - 5)) }, "slow");
-                } else {
-                    $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120}, "slow");
-                }
-            });
-        //2번째 줄
-        $(window).on("scroll",function(){
-                if ($(window).scrollTop() >= 1700) {
-                    $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: 0}, "slow");
-                } else if ($(window).scrollTop() >= 600) {
-                    $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360 + (30 * (($(window).scrollTop() / 100) - 5)) }, "slow");
-                } else {
-                    $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360}, "slow");
-                }
-            });
-        //3번째 줄
-        $(window).on("scroll",function(){
-                if ($(window).scrollTop() >= 1700) {
-                    $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: 0}, "slow");
-                } else if ($(window).scrollTop() >= 600) {
-                    $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240 + (20 * (($(window).scrollTop() / 100) - 5)) }, "slow");
-                } else {
-                    $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240}, "slow");
-                }
+
+            var st_top_num = parseInt($("#main_stage").offset().top / 100);
+            var st_max = $("#main_stage").offset().top + 950;
+            var st_min = $("#main_stage").offset().top - 250;
+
+            //첫번째 줄
+            if ($(window).scrollTop() >= st_max) {
+                $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 0 }, "slow");
+            } else if ($(window).scrollTop() >= st_min) {
+                $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120 + (-12 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
+            } else {
+                $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120 }, "slow");
+            }
+
+            //두번째 줄
+            if ($(window).scrollTop() >= st_max) {
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: 0 }, "slow");
+            } else if ($(window).scrollTop() >= st_min) {
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360 + (30 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
+            } else {
+                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360 }, "slow");
+            }
+
+            //세번째 줄
+            if ($(window).scrollTop() >= st_max) {
+                $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: 0 }, "slow");
+            } else if ($(window).scrollTop() >= st_min) {
+                $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240 + (20 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
+            } else {
+                $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240 }, "slow");
+            }
             });
 
         //entertainment hover 
@@ -147,6 +150,14 @@ $(window).scroll(function () {
             });
         });
 
+        //main_top 앵커 스크롤 애니메이션
+        $(function ($) {
+            $("#main_top > a").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top - 100 }, 700);
+            }); // 메뉴바 높이만큼 뺌
+        });
+
     </script>
     </head>
     <body>
@@ -170,9 +181,40 @@ $(window).scroll(function () {
 
             <div id="main_top">
                 <div class="top_text">
+                    안녕하세요, <br>
+                    서울문화재단입니다.
+                </div>
+                <a href="#main_stage"><img src="img/bottom.png" alt="아래로"></a>
+            </div>
+            
+            <div id="main_slide">
+                <div class="m_slide_wr_out">
+                <div class="m_slide_text">
+                    <h2>SFAC NEWS</h2>
+                    <p>서울문화재단의 새로운 소식들을 만나보세요.</p>
+                </div>
+                <div class="m_slide_wr_in">
+
+                    <div class="m_slide_box">
+                        
+                        <ul class="m_slide">
+                            <li><a href="#"><img src="img/silde_1.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/silde_2.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/silde_3.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/silde_4.png" alt=""></a></li>
+                        </ul>
+
+                    </div>
+
+                    <img src="img/arrow2.png" class="prev" alt="prev" >
+                    <img src="img/arrow2.png" class="next" alt="next" style="transform: scaleX(-1);">
 
                 </div>
             </div>
+
+            </div>
+
+            
             <div id="main_stage">
                 <div id="stage_wrap">
                     <div class="stage_text">
@@ -201,33 +243,6 @@ $(window).scroll(function () {
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div id="main_slide">
-                <div class="m_slide_wr_out">
-                <div class="m_slide_text">
-                    <h2>SFAC NEWS</h2>
-                    <p>서울문화재단의 새로운 소식들을 만나보세요.</p>
-                </div>
-                <div class="m_slide_wr_in">
-
-                    <div class="m_slide_box">
-                        
-                        <ul class="m_slide">
-                            <li><a href="#"><img src="img/silde_1.png" alt=""></a></li>
-                            <li><a href="#"><img src="img/silde_2.png" alt=""></a></li>
-                            <li><a href="#"><img src="img/silde_3.png" alt=""></a></li>
-                            <li><a href="#"><img src="img/silde_4.png" alt=""></a></li>
-                        </ul>
-
-                    </div>
-
-                    <img src="img/arrow2.png" class="prev" alt="prev" >
-                    <img src="img/arrow2.png" class="next" alt="next" style="transform: scaleX(-1);">
-
-                </div>
-            </div>
-
             </div>
 
             <div id="main_notice">
@@ -308,7 +323,7 @@ $(window).scroll(function () {
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div class="icon_noti">
                         <div>
                             <img src="img/icon1.svg" alt="1">
