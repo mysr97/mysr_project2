@@ -55,6 +55,7 @@
     /* background-size cover 입력해줘야 크기가 화면에 따라 맞춰짐 */
     overflow: hidden;
     text-align: center;
+    opacity: 0;
 }
 
 #main_top > .top_text {
@@ -69,6 +70,17 @@
     font-weight: 900;
     color: #f49e00;
     letter-spacing: 3px;
+    z-index: 99;
+}
+#main_top > span {
+    opacity: 0.1;
+    font-size: 15em;
+    font-weight: 900;
+    position: absolute;
+    color: #f49e00;
+    left: 0;
+    top: 25%;
+
 }
 #main_top > .circle {
     width: 100px;
@@ -77,8 +89,16 @@
     border-radius: 100%;
     cursor: pointer;
 }
-#main_top > a {
+
+#main_top > img {
+    position: absolute;
+    width: 50%;
+    left: -5%;
+    bottom: 0%;
+    transform: rotate(180deg);
+    opacity:0;
 }
+
 #main_top > a > img {
 
     width: 5%;

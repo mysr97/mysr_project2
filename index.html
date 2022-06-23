@@ -36,9 +36,12 @@ $(window).scroll(function () {
             }
         });
 
-        //main_top 텍스트 나타내기
+        //main_top 텍스트,이미지 나타내기
         $(function(){
+            $("#main_top").animate({opacity:1},500);
             $(".top_text").delay(300).animate({opacity:1, left:200},700);
+            $("#main_top > img").delay(200).animate({opacity:1},1000);
+
         });
 
         //stage box 스크롤 이동시 위치 변경
@@ -186,7 +189,9 @@ $(window).scroll(function () {
                     안녕하세요, <br>
                     서울문화재단입니다.
                 </div>
+                <span>SFAC</span>
                 <!-- <div class="circle"></div> -->
+                <!-- <img src="img/bg_graphic.png" alt="1"> -->
                 <a href="#main_stage"><img src="img/bottom.png" alt="아래로"></a>
             </div>
             
