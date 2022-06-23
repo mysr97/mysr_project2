@@ -236,7 +236,7 @@
 #main_notice {
     width: 100%;
     height: 700px;
-    background-color: #f49e00;
+    background-color: rgb(226, 226, 226);
     background-image: url("../img/bg_graphic_w.png");
     background-attachment: fixed;
     background-position: top center;
@@ -255,6 +255,7 @@
     width: 40%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
     padding: 10% 3%;
 }
 
@@ -262,11 +263,30 @@
     width: 33%;
     cursor: pointer;
     text-align: center;
-    color: #fff;
+    font-weight: 500;
 }
+
 .m_noti_wr > .icon_noti > div > img {
     height: 50%;
     padding: 0 0 5% 0;
+    filter: invert(1);
+}
+
+.m_noti_wr > .icon_noti > div:hover > img {
+    filter: invert(67%) sepia(77%) saturate(3902%) hue-rotate(11deg) brightness(208%) contrast(102%);
+    transition: all 0.2s ease-out;
+}
+.m_noti_wr > .icon_noti > div:nth-of-type(9) > img {
+    filter: none;
+}
+.m_noti_wr > .icon_noti > div:nth-of-type(9):hover > img {
+    filter: none;
+    transition: all 0.2s ease-out;
+}
+
+.m_noti_wr > .icon_noti > div:hover > span {
+    color:#f49e00;
+    transition: all 0.2s ease-out;
 }
 
 .m_noti_wr > .text_noti {
@@ -282,9 +302,9 @@
 }
 
 .m_noti_wr > .text_noti > .text_noti_menu > button {
-    height: 100%;
+    height: 50%;
     padding: 0 2%;
-    margin: 0 -4px 0 0;
+    margin: 0 5px 0 0;
     border: none;
     text-align: center;
     cursor: pointer;
@@ -329,10 +349,10 @@
     overflow:hidden; /*넘어가는 내용 숨김*/
     text-overflow:ellipsis; /*넘어가는 내용...처리*/
     white-space:nowrap; /*줄넘김 안함*/
-    color: #666;
+    color: #333;
 }
 .m_noti_wr > .text_noti > .text_noti_ct > ul > li > a {
-    color: #666;
+    color: #333;
 }
 
 /*여기부터 entertainment*/
