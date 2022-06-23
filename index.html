@@ -107,30 +107,42 @@ $(window).scroll(function () {
             });
         });
 
-        //notice menu 클릭시 해당 메뉴 내용 fadeIn
+        //notice menu 클릭시 해당 메뉴 내용 fadeIn 및 메뉴 컬러 변경
         $(function(){
             $(".text_noti_menu1").click(function(){
                 $(".text_noti_ct").css('display', 'none');
+                $(".m_noti_wr > .text_noti > .text_noti_menu > button").removeClass("bgon")
+                $(this).addClass("bgon");
                 $(".box1").fadeIn();
             });
             $(".text_noti_menu2").click(function(){
                 $(".text_noti_ct").css('display', 'none');
+                $(".m_noti_wr > .text_noti > .text_noti_menu > button").removeClass("bgon")
+                $(this).addClass("bgon");
                 $(".box2").fadeIn();
             });
             $(".text_noti_menu3").click(function(){
                 $(".text_noti_ct").css('display', 'none');
+                $(".m_noti_wr > .text_noti > .text_noti_menu > button").removeClass("bgon")
+                $(this).addClass("bgon");
                 $(".box3").fadeIn();
             });
             $(".text_noti_menu4").click(function(){
                 $(".text_noti_ct").css('display', 'none');
+                $(".m_noti_wr > .text_noti > .text_noti_menu > button").removeClass("bgon")
+                $(this).addClass("bgon");
                 $(".box4").fadeIn();
             });
             $(".text_noti_menu5").click(function(){
                 $(".text_noti_ct").css('display', 'none');
+                $(".m_noti_wr > .text_noti > .text_noti_menu > button").removeClass("bgon")
+                $(this).addClass("bgon");
                 $(".box5").fadeIn();
             });
             $(".text_noti_menu6").click(function(){
                 $(".text_noti_ct").css('display', 'none');
+                $(".m_noti_wr > .text_noti > .text_noti_menu > button").removeClass("bgon")
+                $(this).addClass("bgon");
                 $(".box6").fadeIn();
             });
         });
@@ -266,7 +278,7 @@ $(window).scroll(function () {
                     </div>
                     <div class="text_noti">
                         <div class="text_noti_menu">
-                            <button class="text_noti_menu1">공지사항</button>
+                            <button class="text_noti_menu1 bgon">공지사항</button>
                             <button class="text_noti_menu2">공모안내</button>
                             <button class="text_noti_menu3">보도자료</button>
                             <button class="text_noti_menu4">뉴스레터</button>
