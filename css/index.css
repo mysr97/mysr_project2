@@ -45,9 +45,9 @@
 /*여기부터 main_top*/
 #main_top {
     width: 100%;
-    height: 900px;
+    height: 100vh;
     background-color: #fff;
-    background-image: url("../img/bg_graphic.png");
+    background-image: url("../img/bbg_graphic.png");
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
@@ -61,9 +61,9 @@
 #main_top > .top_text {
     text-align: left;
     width: auto;
-    height: 300px;
+    height: 50vh;
     position: relative;
-    top: 450px;
+    top: 50vh;
     left: -150px;
     opacity: 0;
     font-size: 4.5em;
@@ -82,22 +82,31 @@
     top: 25%;
 
 }
-#main_top > .circle {
-    width: 100px;
-    height: 100px;
-    background-color: #333;
-    border-radius: 100%;
-    cursor: pointer;
-}
-
-#main_top > img {
+/* #main_top > .circle {
+    width: 40vw;
+    height: 40vw;
+    right: -0vw;
+    bottom: 15%;
+    z-index: 1;
     position: absolute;
-    width: 50%;
-    left: -5%;
-    bottom: 0%;
-    transform: rotate(180deg);
-    opacity:0;
+    background: #f49e00;
+    box-shadow:inset 5vh 2vh 10vh white;
+    border-radius: 50%;
 }
+#main_top > .circle2 {
+    width: 20vw;
+    height: 20vw;
+    right: 35vw;
+    bottom: 45%;
+    z-index: 1;
+    position: absolute;
+    background: black;
+    background-image: url("/img/sfac.jpg");
+    box-shadow:inset 100vh 100vh 100vh rgba(255,255,255,0.2);
+    background-size: cover;
+    border-radius: 50%;
+} */
+
 
 #main_top > a > img {
 
@@ -115,7 +124,7 @@
     width: 100%;
     height: 2450px;
     background-color: #fff;
-    background-image: url("../img/bg_graphic_g.png");
+    background-image: url("../img/bbg_graphic.png");
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
@@ -404,7 +413,7 @@
     height: 750px;
     margin: 0 auto;
     padding: 75px 0;
-    background-image: url("../img/bg_graphic_iv.png");
+    background-image: url("../img/bbg_graphic.png");
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
