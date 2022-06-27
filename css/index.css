@@ -55,6 +55,7 @@
     /* background-size cover 입력해줘야 크기가 화면에 따라 맞춰짐 */
     overflow: hidden;
     text-align: center;
+    position: relative;
     opacity: 0;
 }
 
@@ -82,17 +83,27 @@
     top: 25%;
 
 }
-/* #main_top > .circle {
-    width: 40vw;
-    height: 40vw;
-    right: -0vw;
+#main_top > .circle {
+    width: 50vw;
+    height: 50vw;
+    right: -10vw;
     bottom: 15%;
     z-index: 1;
     position: absolute;
     background: #f49e00;
-    box-shadow:inset 5vh 2vh 10vh white;
+    box-shadow:inset 10vh 2vh 15vh #FA690D;
     border-radius: 50%;
+
+    animation-name: circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes circle {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
+
 #main_top > .circle2 {
     width: 20vw;
     height: 20vw;
@@ -100,16 +111,47 @@
     bottom: 45%;
     z-index: 1;
     position: absolute;
-    background: black;
-    background-image: url("/img/sfac.jpg");
-    box-shadow:inset 100vh 100vh 100vh rgba(255,255,255,0.2);
+    background: #f49e00;
+    box-shadow:inset -5vh 2vh 15vh #FA690D;
     background-size: cover;
     border-radius: 50%;
-} */
+    overflow: hidden;
+    cursor: pointer;
+
+    animation-name: circle2;
+    animation-duration: 5s;
+    animation-iteration-count:unset;
+}
+
+@keyframes circle2 {
+    0%{
+        right: 35vw;
+        bottom: 45%;
+    }
+    50%{
+        right: 25vw;
+        bottom: 45%;
+    }
+    55%{
+        right: 25vw;
+        bottom: 45%;
+    }
+    100%{
+        right: 35vw;
+        bottom: 45%;
+    }
+}
+
+#main_top > .circle2 > img {
+    height: 120%;
+    margin-left: -80%;
+    margin-top: -5%;
+    opacity: 0;
+}
 
 
 #main_top > a > img {
-
+    z-index: 101;
     width: 5%;
     opacity: 0.5;
     bottom: 10%;

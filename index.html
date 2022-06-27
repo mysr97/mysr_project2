@@ -161,8 +161,16 @@ $(window).scroll(function () {
             }); // 메뉴바 높이만큼 뺌
         });
 
-        //background-color 바꾸기
-
+        //circle
+        $(function(){
+            $(".circle2").hover(function(){
+                $(this).children("img").css({opacity:1});
+                $(this).children("img").animate({"margin-left":"-40%"},800)
+            }, function(){
+                $(this).children("img").css({opacity:0});
+                $(this).children("img").css({"margin-left":"-80%"})
+            })
+        });
     </script>
     </head>
     <body>
@@ -190,8 +198,11 @@ $(window).scroll(function () {
                     서울문화재단입니다.
                 </div>
                 <span>SFAC</span>
-                <div class="circle">오브젝트, 애니메이션 추가하기</div>
-                <div class="circle2"></div>
+                <div class="circle">
+                </div>
+                <div class="circle2">
+                    <img src="img/sfac.jpg" alt="">
+                </div>
                 <a href="#main_stage"><img src="img/bottom.png" alt="아래로"></a>
             </div>
             
