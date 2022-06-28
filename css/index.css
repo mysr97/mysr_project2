@@ -67,7 +67,7 @@
         top: 48vh;
         left: -150px;
         opacity: 0;
-        font-size: 3.2em;
+        font-size: 3em;
         font-weight: 900;
         color: #f49e00;
         letter-spacing: 3px;
@@ -79,8 +79,8 @@
         font-weight: 900;
         position: absolute;
         color: #f49e00;
-        left: 0;
-        top: 34%;
+        left: -20px;
+        top: 38%;
     
     }
     #main_top > .circle {
@@ -105,8 +105,8 @@
     }
     
     #main_top > .circle2 {
-        width: 20vw;
-        height: 20vw;
+        width: 24vw;
+        height: 24vw;
         right: 38vw;
         bottom: 60%;
         z-index: 1;
@@ -467,7 +467,7 @@
         background-size:cover;
     }
     .en_wrap {
-        width: 100%;
+        width: 95%;
         height: auto;
         margin: 0 auto;
         display: flex;
@@ -706,7 +706,7 @@
         position: absolute;
         color: #f49e00;
         left: 0;
-        top: 34%;
+        top: 37%;
     
     }
     #main_top > .circle {
@@ -731,8 +731,8 @@
     }
     
     #main_top > .circle2 {
-        width: 20vw;
-        height: 20vw;
+        width: 22vw;
+        height: 22vw;
         right: 38vw;
         bottom: 60%;
         z-index: 1;

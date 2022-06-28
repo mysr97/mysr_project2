@@ -19,12 +19,25 @@ $(window).scroll(function () {
         });
 
         //main_top 텍스트,이미지 나타내기
-        $(function(){
-            $("#main_top").animate({opacity:1},500);
-            $(".top_text").delay(300).animate({opacity:1, left:200},700);
-            $("#main_top > img").delay(200).animate({opacity:1},1000);
-
-        });
+        if (window.matchMedia("(max-width: 749.9px)").matches){
+            $(function(){
+                $("#main_top").animate({opacity:1},500);
+                $(".top_text").delay(300).animate({opacity:1, left:100},700);
+                $("#main_top > img").delay(200).animate({opacity:1},1000);
+            });
+        }else if (window.matchMedia("(min-width: 1000px)").matches){
+            $(function(){
+                $("#main_top").animate({opacity:1},500);
+                $(".top_text").delay(300).animate({opacity:1, left:200},700);
+                $("#main_top > img").delay(200).animate({opacity:1},1000);
+            });
+        } else {
+            $(function(){
+                $("#main_top").animate({opacity:1},500);
+                $(".top_text").delay(300).animate({opacity:1, left:150},700);
+                $("#main_top > img").delay(200).animate({opacity:1},1000);
+            });
+        }
 
         //stage box 스크롤 이동시 위치 변경
         $(window).on("scroll",function(){
@@ -144,16 +157,9 @@ $(window).scroll(function () {
         });
 
         //circle
-        // $(function(){
-        //     $(".circle2").delay(function(){
-        //         $(this).children("img").css({opacity:1});
-        //         $(this).children("img").animate({"margin-left":"-40%"},800)
-        //     }, function(){
-        //         $(this).children("img").css({opacity:0});
-        //         $(this).children("img").css({"margin-left":"-80%"})
-        //     })
-        // });
         $(function(){
             $(".circle2").children("img").delay(4000).animate({opacity:1},700);
             $(".circle2").children("img").animate({"margin-left":"-40%"},800);
         });
+
+
