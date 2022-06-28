@@ -352,7 +352,7 @@
         display: flex;
         flex-flow: wrap;
         justify-content: space-around;
-        padding: 10% 3% 5%;
+        padding: 10% 3%;
     }
     
     .m_noti_wr > .icon_noti > div {
@@ -390,7 +390,7 @@
     .m_noti_wr > .text_noti {
         width: 100%;
         height: auto;
-        padding: 10% 0 0;
+        padding: 15% 0 5%;
         display: flex;
         flex-flow: row wrap;
     }
