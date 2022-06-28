@@ -47,39 +47,76 @@ $(window).scroll(function () {
         }
 
         //stage box 스크롤 이동시 위치 변경
-        $(window).on("scroll",function(){
+        if (window.matchMedia("(max-width: 1000px)").matches){
+            $(window).on("scroll",function(){
 
-            var st_top_num = parseInt($("#main_stage").offset().top / 100);
-            var st_max = $("#main_stage").offset().top + 950;
-            var st_min = $("#main_stage").offset().top - 250;
+                var st_top_num = parseInt($("#main_stage").offset().top / 100);
+                var st_max = $("#main_stage").offset().top + 950;
+                var st_min = $("#main_stage").offset().top - 250;
+    
+                //첫번째 줄
+                if ($(window).scrollTop() >= st_max) {
+                    $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 0 }, "slow");
+                } else if ($(window).scrollTop() >= st_min) {
+                    $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120 + (-12 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
+                } else {
+                    $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120 }, "slow");
+                }
+    
+                //두번째 줄
+                if ($(window).scrollTop() >= st_max) {
+                    $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: 0 }, "slow");
+                } else if ($(window).scrollTop() >= st_min) {
+                    $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360 + (30 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
+                } else {
+                    $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360 }, "slow");
+                }
+    
+                //세번째 줄
+                if ($(window).scrollTop() >= st_max) {
+                    $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: 0 }, "slow");
+                } else if ($(window).scrollTop() >= st_min) {
+                    $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240 + (20 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
+                } else {
+                    $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240 }, "slow");
+                }
+                });
+        }else {
+            $(window).on("scroll",function(){
 
-            //첫번째 줄
-            if ($(window).scrollTop() >= st_max) {
-                $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 0 }, "slow");
-            } else if ($(window).scrollTop() >= st_min) {
-                $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120 + (-12 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
-            } else {
-                $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120 }, "slow");
-            }
+                var st_top_num = parseInt($("#main_stage").offset().top / 100);
+                var st_max = $("#main_stage").offset().top + 950;
+                var st_min = $("#main_stage").offset().top - 250;
+    
+                //첫번째 줄
+                if ($(window).scrollTop() >= st_max) {
+                    $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 0 }, "slow");
+                } else if ($(window).scrollTop() >= st_min) {
+                    $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120 + (-12 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
+                } else {
+                    $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120 }, "slow");
+                }
+    
+                //두번째 줄
+                if ($(window).scrollTop() >= st_max) {
+                    $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: 0 }, "slow");
+                } else if ($(window).scrollTop() >= st_min) {
+                    $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360 + (30 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
+                } else {
+                    $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360 }, "slow");
+                }
+    
+                //세번째 줄
+                if ($(window).scrollTop() >= st_max) {
+                    $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: 0 }, "slow");
+                } else if ($(window).scrollTop() >= st_min) {
+                    $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240 + (20 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
+                } else {
+                    $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240 }, "slow");
+                }
+                });
+        }
 
-            //두번째 줄
-            if ($(window).scrollTop() >= st_max) {
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: 0 }, "slow");
-            } else if ($(window).scrollTop() >= st_min) {
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360 + (30 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
-            } else {
-                $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360 }, "slow");
-            }
-
-            //세번째 줄
-            if ($(window).scrollTop() >= st_max) {
-                $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: 0 }, "slow");
-            } else if ($(window).scrollTop() >= st_min) {
-                $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240 + (20 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
-            } else {
-                $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240 }, "slow");
-            }
-            });
 
         //entertainment hover 
         $(function(){
