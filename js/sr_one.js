@@ -20,16 +20,10 @@ $(window).scroll(function () {
 
         //main_top 텍스트,이미지 나타내기
         
-        if (window.matchMedia("(max-width: 549.9px)").matches){
+        if (window.matchMedia("(max-width: 650px)").matches){
             $(function(){
                 $("#main_top").animate({opacity:1},500);
                 $(".top_text").delay(300).animate({opacity:1, left:50},700);
-                $("#main_top > img").delay(200).animate({opacity:1},1000);
-            });
-        }else if (window.matchMedia("(min-width: 750px)").matches){
-            $(function(){
-                $("#main_top").animate({opacity:1},500);
-                $(".top_text").delay(300).animate({opacity:1, left:100},700);
                 $("#main_top > img").delay(200).animate({opacity:1},1000);
             });
         }else if (window.matchMedia("(min-width: 1000px)").matches){
@@ -44,7 +38,7 @@ $(window).scroll(function () {
                 $(".top_text").delay(300).animate({opacity:1, left:150},700);
                 $("#main_top > img").delay(200).animate({opacity:1},1000);
             });
-        }
+        };
 
         //stage box 스크롤 이동시 위치 변경
         if (window.matchMedia("(max-width: 1000px)").matches){
