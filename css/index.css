@@ -67,7 +67,7 @@
         top: 48vh;
         left: -150px;
         opacity: 0;
-        font-size: 2.5em;
+        font-size: 2.2em;
         font-weight: 900;
         color: #f49e00;
         letter-spacing: 3px;
@@ -75,7 +75,7 @@
     }
     #main_top > span {
         opacity: 0.1;
-        font-size: 9em;
+        font-size: 8em;
         font-weight: 900;
         position: absolute;
         color: #f49e00;
@@ -366,7 +366,7 @@
     }
     
     .m_noti_wr > .icon_noti > div > img {
-        height: 40%;
+        height: 35%;
         padding: 0 0 5% 0;
         filter: invert(1);
     }
