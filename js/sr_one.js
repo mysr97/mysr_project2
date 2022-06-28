@@ -19,7 +19,14 @@ $(window).scroll(function () {
         });
 
         //main_top 텍스트,이미지 나타내기
-        if (window.matchMedia("(max-width: 749.9px)").matches){
+        
+        if (window.matchMedia("(max-width: 549.9px)").matches){
+            $(function(){
+                $("#main_top").animate({opacity:1},500);
+                $(".top_text").delay(300).animate({opacity:1, left:50},700);
+                $("#main_top > img").delay(200).animate({opacity:1},1000);
+            });
+        }else if (window.matchMedia("(min-width: 750px)").matches){
             $(function(){
                 $("#main_top").animate({opacity:1},500);
                 $(".top_text").delay(300).animate({opacity:1, left:100},700);
