@@ -162,14 +162,18 @@ $(window).scroll(function () {
         });
 
         //circle
+        // $(function(){
+        //     $(".circle2").delay(function(){
+        //         $(this).children("img").css({opacity:1});
+        //         $(this).children("img").animate({"margin-left":"-40%"},800)
+        //     }, function(){
+        //         $(this).children("img").css({opacity:0});
+        //         $(this).children("img").css({"margin-left":"-80%"})
+        //     })
+        // });
         $(function(){
-            $(".circle2").hover(function(){
-                $(this).children("img").css({opacity:1});
-                $(this).children("img").animate({"margin-left":"-40%"},800)
-            }, function(){
-                $(this).children("img").css({opacity:0});
-                $(this).children("img").css({"margin-left":"-80%"})
-            })
+            $(".circle2").children("img").delay(4000).animate({opacity:1},700);
+            $(".circle2").children("img").animate({"margin-left":"-40%"},800);
         });
     </script>
     </head>

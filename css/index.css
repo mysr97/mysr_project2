@@ -112,7 +112,7 @@
     z-index: 1;
     position: absolute;
     background: #f49e00;
-    box-shadow:inset -5vh 2vh 15vh #FA690D;
+    box-shadow:inset -5vh 2vh 15vh #FA690D, -1vh 4vh 5vh rgba(0,0,0,0.2);
     background-size: cover;
     border-radius: 50%;
     overflow: hidden;
