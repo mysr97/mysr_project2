@@ -59,12 +59,14 @@ $(window).scroll(function () {
         };
 
         //stage box 스크롤 이동시 위치 변경
+
+        if (window.matchMedia("(min-width: 550px)").matches){
             $(window).on("scroll",function(){
 
                 var st_top_num = parseInt($("#main_stage").offset().top / 100);
-                mainst = $("#main_stage").offset().top;
-                mainnt = $("#main_notice").offset().top;
-                var st_max = mainnt - mainst
+                var mainst = $("#main_stage").offset().top;
+                var mainnt = $("#main_notice").offset().top;
+                var st_max = mainnt - (mainst/1.45);
                 var st_min = $("#main_stage").offset().top / 1.2;
     
                 //첫번째 줄
@@ -94,6 +96,47 @@ $(window).scroll(function () {
                     $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240 }, "slow");
                 }
                 });
+            }
+
+            $(window).resize(function(){
+                if (window.matchMedia("(min-width: 550px)").matches){
+                    $(window).on("scroll",function(){
+        
+                        var st_top_num = parseInt($("#main_stage").offset().top / 100);
+                        var mainst = $("#main_stage").offset().top;
+                        var mainnt = $("#main_notice").offset().top;
+                        var st_max = mainnt - (mainst/1.45);
+                        var st_min = $("#main_stage").offset().top / 1.2;
+            
+                        //첫번째 줄
+                        if ($(window).scrollTop() >= st_max) {
+                            $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 0 }, "slow");
+                        } else if ($(window).scrollTop() >= st_min) {
+                            $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120 + (-12 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
+                        } else {
+                            $(".st_box_sm_wr:nth-of-type(1)").stop().animate({ marginTop: 120 }, "slow");
+                        }
+            
+                        //두번째 줄
+                        if ($(window).scrollTop() >= st_max) {
+                            $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: 0 }, "slow");
+                        } else if ($(window).scrollTop() >= st_min) {
+                            $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360 + (30 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
+                        } else {
+                            $(".st_box_sm_wr:nth-of-type(2)").stop().animate({ marginTop: -360 }, "slow");
+                        }
+            
+                        //세번째 줄
+                        if ($(window).scrollTop() >= st_max) {
+                            $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: 0 }, "slow");
+                        } else if ($(window).scrollTop() >= st_min) {
+                            $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240 + (20 * (($(window).scrollTop() / 100) - (st_top_num - 1)))}, "slow");
+                        } else {
+                            $(".st_box_sm_wr:nth-of-type(3)").stop().animate({ marginTop: -240 }, "slow");
+                        }
+                        });
+                    }
+            });
 
 
         //entertainment hover 
