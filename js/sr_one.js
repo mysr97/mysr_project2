@@ -1,13 +1,17 @@
 
-$(window).scroll(function () { 
+$(window).scroll(function () {
     var scrollValue = $(document).scrollTop();
 
     console.log(scrollValue);
 
 });
+
         //menu 스크롤 이동시 css 변경
+
         $(window).on("scroll", function () {
-            if ($(window).scrollTop() >= 700) {
+            var ms = $("#main_slide").offset().top -100;
+
+            if ($(window).scrollTop() >= ms) {
                 $("#menu").css({ "background-color": "rgba(0,0,0,0.7)" });
                 $("#menu > .meLi > li a").css({ "color": "white" });
                 $("#menu > .meLi > li > a > img").css({"filter" : "invert(100%)"});
@@ -17,6 +21,10 @@ $(window).scroll(function () {
                 $("#menu > .meLi > li > a > img").css({"filter" : "none"});
             }
         });
+        
+        //menu 햄버거 메뉴 적용
+        
+
 
         //main_top 텍스트,이미지 나타내기
         
