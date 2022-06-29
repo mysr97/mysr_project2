@@ -220,8 +220,8 @@ $(window).scroll(function () {
 
         //circle
         $(function(){
-            $(".circle2").children("img").delay(3500).animate({opacity:1},700);
-            $(".circle2").children("img").animate({"margin-left":"-40%"},800);
+            $(".circle2").find("img").delay(3500).animate({opacity:1},700);
+            $(".circle2").find("img").animate({"margin-left":"-40%"},800);
         });
 
 

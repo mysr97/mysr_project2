@@ -12,7 +12,7 @@
         width: 20%;
         justify-content: flex-start;
     }
-    #menu > .logo > img {
+    #menu > .logo > a > img {
         width: 100px;
         margin: 0 0 0 30%;
         
@@ -206,7 +206,7 @@
         }
     }
     
-    #main_top > .circle2 > img {
+    #main_top > .circle2 > a > img {
         height: 120%;
         margin-left: -80%;
         margin-top: -5%;
@@ -704,7 +704,7 @@
     #menu > .logo {
         width: 20%;
     }
-    #menu > .logo > img {
+    #menu > .logo > a > img {
         width: 100px;
         margin: 0 0 0 30%;
         
@@ -900,7 +900,7 @@
         }
     }
     
-    #main_top > .circle2 > img {
+    #main_top > .circle2 > a > img {
         height: 120%;
         margin-left: -80%;
         margin-top: -5%;
@@ -1398,7 +1398,7 @@
     #menu > .logo {
         width: 20%;
     }
-    #menu > .logo > img {
+    #menu > .logo > a > img {
         width: 100px;
         margin: 0 0 0 30%;
         
@@ -1594,7 +1594,7 @@
         }
     }
     
-    #main_top > .circle2 > img {
+    #main_top > .circle2 > a > img {
         height: 120%;
         margin-left: -80%;
         margin-top: -5%;
@@ -2091,7 +2091,7 @@
     #menu > .logo {
         width: 20%;
     }
-    #menu > .logo > img {
+    #menu > .logo > a > img {
         width: 100px;
         margin: 0 0 0 30%;
         
@@ -2287,7 +2287,7 @@
         }
     }
     
-    #main_top > .circle2 > img {
+    #main_top > .circle2 > a > img {
         height: 120%;
         margin-left: -80%;
         margin-top: -5%;
@@ -2783,7 +2783,7 @@
     #menu > .logo {
         width: 20%;
     }
-    #menu > .logo > img {
+    #menu > .logo > a > img {
         width: 100px;
         margin: 0 0 0 100px;
         
@@ -2979,7 +2979,7 @@
         }
     }
     
-    #main_top > .circle2 > img {
+    #main_top > .circle2 > a > img {
         height: 120%;
         margin-left: -80%;
         margin-top: -5%;
@@ -3473,7 +3473,7 @@
 #menu > .logo {
     width: 20%;
 }
-#menu > .logo > img {
+#menu > .logo > a > img {
     width: 100px;
     margin: 0 0 0 100px;
     
@@ -3669,7 +3669,7 @@
     }
 }
 
-#main_top > .circle2 > img {
+#main_top > .circle2 > a > img {
     height: 120%;
     margin-left: -80%;
     margin-top: -5%;
