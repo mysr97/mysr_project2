@@ -402,7 +402,7 @@
     }
     
     .m_noti_wr > .text_noti > .text_noti_menu > button {
-        width: 32.5%;
+        width: 32%;
         height: 50%;
         padding: 0 1.5%;
         margin: 0 1px 0 0;
@@ -1031,7 +1031,7 @@
     }
     
     .m_noti_wr > .text_noti > .text_noti_menu > button {
-        width: 32.5%;
+        width: 32%;
         height: 50%;
         padding: 0 1.5%;
         margin: 0 1px 0 0;
