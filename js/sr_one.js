@@ -7,7 +7,6 @@ $(window).scroll(function () {
 });
 
         //menu 스크롤 이동시 css 변경
-
         $(window).on("scroll", function () {
             var ms = $("#main_slide").offset().top -100;
 
@@ -24,6 +23,7 @@ $(window).scroll(function () {
             }
         });
         
+
         // 햄버거 메뉴
         if (window.matchMedia("(max-width: 1000px)").matches) {
             function openRightMenu() {
@@ -33,11 +33,9 @@ $(window).scroll(function () {
                 document.getElementById("right_menu").style.width = "0%";
             }
         } 
-        
 
 
         //main_top 텍스트,이미지 나타내기
-        
         if (window.matchMedia("(max-width: 650px)").matches){
             $(function(){
                 $("#main_top").animate({opacity:1},500);
@@ -59,7 +57,6 @@ $(window).scroll(function () {
         };
 
         //stage box 스크롤 이동시 위치 변경
-
         if (window.matchMedia("(min-width: 550px)").matches){
             $(window).on("scroll",function(){
 
