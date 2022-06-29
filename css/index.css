@@ -84,10 +84,10 @@
     
     }
     #main_top > .circle {
-        width: 65vw;
-        height: 65vw;
-        right: -20vw;
-        bottom: 35%;
+        width: 70vw;
+        height: 70vw;
+        right: -23vw;
+        bottom: 40%;
         z-index: 1;
         position: absolute;
         background: #f49e00;
@@ -105,9 +105,9 @@
     }
     
     #main_top > .circle2 {
-        width: 24vw;
-        height: 24vw;
-        right: 38vw;
+        width: 30vw;
+        height: 30vw;
+        right: 35vw;
         bottom: 60%;
         z-index: 1;
         position: absolute;
@@ -125,19 +125,19 @@
     
     @keyframes circle2 {
         0%{
-            right: 38vw;
+            right: 35vw;
             bottom: 60%;
         }
         50%{
-            right: 28vw;
+            right: 25vw;
             bottom: 60%;
         }
         55%{
-            right: 28vw;
+            right: 25vw;
             bottom: 60%;
         }
         100%{
-            right: 38vw;
+            right: 35vw;
             bottom: 60%;
         }
     }
@@ -398,12 +398,14 @@
     .m_noti_wr > .text_noti > .text_noti_menu {
         width: 100%;
         height: 20%;
+        margin: 0 0 3%;
     }
     
     .m_noti_wr > .text_noti > .text_noti_menu > button {
+        width: 32.5%;
         height: 50%;
         padding: 0 1.5%;
-        margin: 0 2px 0 0;
+        margin: 0 1px 0 0;
         border: none;
         text-align: center;
         cursor: pointer;
@@ -1025,12 +1027,14 @@
     .m_noti_wr > .text_noti > .text_noti_menu {
         width: 100%;
         height: 20%;
+        margin: 0 0 3%;
     }
     
     .m_noti_wr > .text_noti > .text_noti_menu > button {
+        width: 32.5%;
         height: 50%;
         padding: 0 1.5%;
-        margin: 0 2px 0 0;
+        margin: 0 1px 0 0;
         border: none;
         text-align: center;
         cursor: pointer;
@@ -1651,9 +1655,11 @@
     .m_noti_wr > .text_noti > .text_noti_menu {
         width: 100%;
         height: 15%;
+        margin: 0;
     }
     
     .m_noti_wr > .text_noti > .text_noti_menu > button {
+        width: auto;
         height: 50%;
         padding: 0 1.5%;
         margin: 0 2px 0 0;
@@ -2276,12 +2282,14 @@
     .m_noti_wr > .text_noti > .text_noti_menu {
         width: 100%;
         height: 15%;
+        margin: 0;
     }
     
     .m_noti_wr > .text_noti > .text_noti_menu > button {
+        width: auto;
         height: 50%;
-        padding: 0 2%;
-        margin: 0 5px 0 0;
+        padding: 0 1.5%;
+        margin: 0 2px 0 0;
         border: none;
         text-align: center;
         cursor: pointer;
@@ -2899,12 +2907,14 @@
     .m_noti_wr > .text_noti > .text_noti_menu {
         width: 100%;
         height: 15%;
+        margin: 0;
     }
     
     .m_noti_wr > .text_noti > .text_noti_menu > button {
+        width: auto;
         height: 50%;
-        padding: 0 2%;
-        margin: 0 5px 0 0;
+        padding: 0 1.5%;
+        margin: 0 2px 0 0;
         border: none;
         text-align: center;
         cursor: pointer;
@@ -3523,12 +3533,14 @@
 .m_noti_wr > .text_noti > .text_noti_menu {
     width: 100%;
     height: 15%;
+    margin: 0;
 }
 
 .m_noti_wr > .text_noti > .text_noti_menu > button {
+    width: auto;
     height: 50%;
-    padding: 0 2%;
-    margin: 0 5px 0 0;
+    padding: 0 1.5%;
+    margin: 0 2px 0 0;
     border: none;
     text-align: center;
     cursor: pointer;
