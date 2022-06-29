@@ -13,10 +13,43 @@
         rel="stylesheet">
 
     <title>서울문화재단 - 기관소개</title>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/sr_two.js"></script>
 </head>
 <body>
+
+    <div id="wrap">
+        <div id="menu">
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+            <ul class="meLi">
+                <li><a href="sub1.html">기관소개</a></li>
+                <li><a href="#">공모신청</a></li>
+                <li><a href="#">시민참여</a></li>
+                <li><a href="#">공간소개</a></li>
+                <li><a href="#">사업소개</a></li>
+                <li><a href="#">새소식</a></li>
+                <li><a href="#">정보공유</a></li>
+                <li><a href="#"><img src="img/menu.png" alt="1"></a></li>
+                <li><a href="#"><img src="img/search.png" alt="2"></a></li>
+            </ul>
+            <div class="hambuger"><img src="img/menu.png" alt="menu" onclick="openRightMenu()"></div>
+            
+            <div id="right_menu" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeRightMenu()">&times;</a>
+                <div class="overlay-content">
+                    <li><a href="sub1.html">기관소개</a></li>
+                    <li><a href="#">공모신청</a></li>
+                    <li><a href="#">시민참여</a></li>
+                    <li><a href="#">공간소개</a></li>
+                    <li><a href="#">사업소개</a></li>
+                    <li><a href="#">새소식</a></li>
+                    <li><a href="#">정보공유</a></li>
+                    <li><a href="#"><img src="img/search.png" alt="2"></a></li>
+                </div>
+            </div>
+        </div>
+
+    </div>
     
 </body>
 </html>
