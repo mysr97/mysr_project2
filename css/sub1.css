@@ -166,9 +166,63 @@
 /*여기부터 sub1_intro_t*/
 #sub1_intro_t {
     width: 100%;
-    height: 1200px;
-    background-color: lightgreen;
+    height: 200vh;
+    background-color: white;
+    position: relative;
 }
+
+#sub1_intro_t > .sit_b {
+    height: 100vh;
+    position: relative;
+}
+#sub1_intro_t > .sit_b > img {
+    width: 35%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0;
+}
+#sub1_intro_t > .sit_b > div {
+    width: 40%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 65%;
+    font-size: 1vw;
+}
+#sub1_intro_t > .sit_b > div > h2 {
+    font-size: 3.5em;
+    font-weight: 600;
+    margin: 0 0 5% 0;
+}
+#sub1_intro_t > .sit_b > div > h4 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0 0 2% 0;
+    
+}
+#sub1_intro_t > .sit_b > div > p {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+#sub1_intro_t > .sit1 > img {
+    width: 35%;
+    right: 0;
+}
+#sub1_intro_t > .sit1 > div{
+    left: 15%;
+    text-align: right;
+}
+
+#sub1_intro_t > .sit2 > img {
+    width: 55%;
+    left: -5%;
+}
+#sub1_intro_t > .sit2 > div{
+    text-align: left;
+    right: 5%;
+}
+
 
 
 /*여기부터 sub1_intro_bt*/

@@ -26,3 +26,12 @@
                 document.getElementById("right_menu").style.width = "0%";
             }
         } 
+
+        //sub1_top 앵커 스크롤 애니메이션
+        $(function ($) {
+            $("#sub1_top > img").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $("#sub1_intro_t").offset().top - 100 }, 700);
+            }); // 메뉴바 높이만큼 뺌
+        });
+        
