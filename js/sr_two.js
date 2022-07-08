@@ -1,7 +1,7 @@
 
         //menu 스크롤 이동시 css 변경
         $(window).on("scroll", function () {
-            var ms = $("#main_slide").offset().top -100;
+            var ms = $("#sub1_top").offset().top -100;
 
             if ($(window).scrollTop() >= ms) {
                 $("#menu").css({ "background-color": "rgba(0,0,0,0.7)" });
