@@ -1,17 +1,17 @@
 
         //menu 스크롤 이동시 css 변경
         $(window).on("scroll", function () {
-            var ms = $("#sub1_top").offset().top -100;
+            var s1 = $("#sub1_intro_t").offset().top -500;
 
-            if ($(window).scrollTop() >= ms) {
+            if ($(window).scrollTop() >= s1) {
                 $("#menu").css({ "background-color": "rgba(0,0,0,0.7)" });
                 $("#menu > .meLi > li a").css({ "color": "white" });
                 $("#menu > .meLi > li > a > img").css({"filter" : "invert(100%)"});
                 $("#menu > .hambuger > img").attr("src", "img/menu_w.png")
             } else {
                 $("#menu").css({ "background-color": "transparent" });
-                $("#menu > .meLi > li a").css({ "color": "black" });
-                $("#menu > .meLi > li > a > img").css({"filter" : "none"});
+                $("#menu > .meLi > li a").css({ "color": "white" });
+                $("#menu > .meLi > li > a > img").css({"filter" : "invert(100%)"});
                 $("#menu > .hambuger > img").attr("src", "img/menu.png")
             }
         });
@@ -31,7 +31,15 @@
         $(function ($) {
             $("#sub1_top > img").click(function (event) {
                 event.preventDefault();
-                $('html,body').animate({ scrollTop: $("#sub1_intro_t").offset().top - 100 }, 700);
-            }); // 메뉴바 높이만큼 뺌
+                $('html,body').animate({ scrollTop: $("#sub1_intro_t").offset().top }, 700);
+            });
         });
         
+        //sub1_intro_t 애니메이션
+        $(window).on("scroll", function () {
+            var s2 = $("#sub1_intro_t").offset().top-300;
+
+            if ($(window).scrollTop() >= s2) {
+                $("#sub1_intro_t > .sit1 > img").animate({right:0, opacity:1},600);
+            }
+        });
