@@ -292,10 +292,52 @@
 /*여기부터 sub1_greeting*/
 #sub1_greeting {
     width: 100%;
-    height: 800px;
-    background-color: pink;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
+#sub1_greeting > div {
+    width: 35%;
+    height: 70vh;
+    margin: 10vh 20px 0;
+    overflow: hidden;
+}
+#sub1_greeting > div > .gr_img_wr {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+#sub1_greeting > div > .gr_img_wr > .gr_img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    cursor: pointer;
+}
+#sub1_greeting > div > .gr_img_wr > .gr_img:hover {
+    transition: all 0.7s ease;
+    transform: scale(1.05);
+}
+
+#sub1_greeting > div > .gr_img_wr > .gr1 {
+    background-image: url("../img/ceo_one.jpg");
+}
+#sub1_greeting > div > .gr_img_wr > .gr2 {
+    background-image: url("../img/chairman.jpg");
+}
+
+#sub1_greeting > div > span {
+    cursor: pointer;
+    display: inline-block;
+    margin: 3vh 0 0;
+    font-size: 1.2em;
+    font-weight: 300;
+}
 
 /*여기부터 sub1_history*/
 #sub1_history {
