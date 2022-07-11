@@ -37,9 +37,13 @@
         
         //sub1_intro_t 애니메이션
         $(window).on("scroll", function () {
-            var s2 = $("#sub1_intro_t").offset().top-300;
+            var s2 = $("#sub1_intro_t").offset().top / 1.5;
 
             if ($(window).scrollTop() >= s2) {
                 $("#sub1_intro_t > .sit1 > img").animate({right:0, opacity:1},600);
+            }
+
+            if ($(window).scrollTop() >= s2*2.4) {
+                $("#sub1_intro_t > .sit2 > img").animate({left:-40, opacity:1},600);
             }
         });
