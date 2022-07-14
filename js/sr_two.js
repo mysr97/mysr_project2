@@ -1,4 +1,11 @@
 
+$(window).scroll(function () {
+    var scrollValue = $(document).scrollTop();
+
+    console.log(scrollValue);
+
+});
+
         //menu 스크롤 이동시 css 변경
         $(window).on("scroll", function () {
             var s1 = $("#sub1_intro_t").offset().top -500;
@@ -45,5 +52,28 @@
 
             if ($(window).scrollTop() >= s2*2.4) {
                 $("#sub1_intro_t > .sit2 > img").animate({left:-40, opacity:1},600);
+            }
+        });
+
+        //sub1_intro_bt 애니메이션
+
+        $(window).on("scroll", function(){
+            var s3 = $("#sub1_intro_bt").offset().top;
+            var s4 = $("#sub1_greeting").offset().top;
+
+            if ($(window).scrollTop() >= s3) {
+                $(".bt_wr").addClass("fix_sub1");
+                $(".bt_box").addClass("fix_sub1");       
+                $(".bt_text_wr").addClass("fix_sub1");
+            } else {
+                $(".bt_wr").removeClass("fix_sub1");
+                $(".bt_box").removeClass("fix_sub1");       
+                $(".bt_text_wr").removeClass("fix_sub1");
+            }
+
+            if ($(window).scrollTop() >= s4) {
+                $(".bt_wr").removeClass("fix_sub1");
+                $(".bt_box").removeClass("fix_sub1");       
+                $(".bt_text_wr").removeClass("fix_sub1");
             }
         });
