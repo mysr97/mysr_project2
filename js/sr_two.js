@@ -59,21 +59,25 @@ $(window).scroll(function () {
 
         $(window).on("scroll", function(){
             var s3 = $("#sub1_intro_bt").offset().top;
-            var s4 = $("#sub1_greeting").offset().top;
+            var s4 = $("#sub1_greeting").offset().top - 850;
 
             if ($(window).scrollTop() >= s3) {
                 $(".bt_wr").addClass("fix_sub1");
                 $(".bt_box").addClass("fix_sub1");       
                 $(".bt_text_wr").addClass("fix_sub1");
+                $(".bt_text_wr").addClass("tr_sub1");
+                $(".bt_text_box").stop().animate({ top: -1 * (($(window).scrollTop() -s3)/4)},"slow")
             } else {
                 $(".bt_wr").removeClass("fix_sub1");
                 $(".bt_box").removeClass("fix_sub1");       
                 $(".bt_text_wr").removeClass("fix_sub1");
+                $(".bt_text_wr").removeClass("tr_sub1");
             }
 
             if ($(window).scrollTop() >= s4) {
                 $(".bt_wr").removeClass("fix_sub1");
                 $(".bt_box").removeClass("fix_sub1");       
                 $(".bt_text_wr").removeClass("fix_sub1");
+                $(".bt_text_wr").removeClass("tr_sub1");
             }
         });
