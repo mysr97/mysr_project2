@@ -369,9 +369,9 @@
 /*여기부터 sub1_history*/
 #sub1_history {
     width: 100%;
-    height: 800vh;
+    height: 560vh;
     min-height: 650px;
-    background-color: aquamarine;
+    background-color: transparent;
     display: flex;
     flex-flow: row wrap;
     position: relative;
@@ -390,7 +390,7 @@
 }
 
 #sub1_history > #his_scroll_wr {
-    background-color: cornflowerblue;
+    background-color: transparent;
     width: 100%;
     height:100%;
 }
@@ -399,13 +399,13 @@
     width: 95%;
     height: 100%;
     margin: 0 auto;
-    background-color: #f49e00;
+    background-color: transparent;
     position: relative;
     overflow: hidden;
 }
 
 #sub1_history > #his_scroll_wr > .his_scroll > .his_scroll_in {
-    background-color: pink;
+    background-color: transparent;
     width: auto; 
     height: 80vh;
     /*top: 50%;*/
@@ -421,6 +421,11 @@
     height: 90%;
     margin: auto 30px;
     background-color: bisque;
+}
+
+#sub1_history > #his_scroll_wr > .his_scroll > .his_scroll_in > div > div:nth-of-type(1){
+    font-size: 70px;
+    padding: 20px 0;
 }
 
 
