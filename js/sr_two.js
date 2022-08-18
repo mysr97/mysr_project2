@@ -70,10 +70,10 @@ $(window).scroll(function () {
             var upn = -1 *($(window).scrollTop()-$("#his_scroll_wr").offset().top + 100);
 
             if ($(window).scrollTop() +100 >= his) {
-                $(".his_scroll_in").stop().animate({ marginLeft: 0 + upn }, 800);
+                $(".his_scroll_in").stop().css({ marginLeft: 0 + upn });
                 $(".his_scroll_in").addClass("fix")
             } else {
-                $(".his_scroll_in").stop().animate({ marginLeft: 0 }, "slow");
+                $(".his_scroll_in").stop().css({ marginLeft: 0 });
                 $(".his_scroll_in").removeClass("fix")
             }
             });
