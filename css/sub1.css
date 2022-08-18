@@ -369,7 +369,7 @@
 /*여기부터 sub1_history*/
 #sub1_history {
     width: 100%;
-    height: 560vh;
+    height: 480vh;
     min-height: 650px;
     background-color: transparent;
     display: flex;
