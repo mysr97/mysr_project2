@@ -304,7 +304,7 @@
 
 .fix_sub1 {
     position: fixed;
-    top: 0;
+    top: 100px;
     width: 100%;
     overflow: hidden;
 }
@@ -369,7 +369,7 @@
 /*여기부터 sub1_history*/
 #sub1_history {
     width: 100%;
-    height: 100vh;
+    height: 800vh;
     min-height: 650px;
     background-color: aquamarine;
     display: flex;
@@ -377,16 +377,22 @@
     position: relative;
 }
 
+.fix {
+    position: fixed !important;
+    top: 100px;
+    width: 100%;
+}
+
 #sub1_history > #his_text {
     background-color: peachpuff;
     width: 100%;
-    height: 20%;
+    height: 100px;
 }
 
 #sub1_history > #his_scroll_wr {
     background-color: cornflowerblue;
     width: 100%;
-    height: 80%;
+    height:100%;
 }
 
 #sub1_history > #his_scroll_wr > .his_scroll {
@@ -401,9 +407,10 @@
 #sub1_history > #his_scroll_wr > .his_scroll > .his_scroll_in {
     background-color: pink;
     width: auto; 
-    height: 80%;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 80vh;
+    /*top: 50%;*/
+    margin-left: 0;
+    transform: translate(0, 0);
     position: absolute;
     left: 0;
     display: flex;

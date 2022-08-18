@@ -224,4 +224,6 @@ $(window).scroll(function () {
             $(".circle2").find("img").animate({"margin-left":"-40%"},800);
         });
 
+    
+
 

@@ -63,3 +63,17 @@ $(window).scroll(function () {
             if ($(window).scrollTop() >= s3) {
             }
         });
+
+        // 
+        $(window).on("scroll",function(){
+            var his = $("#his_scroll_wr").offset().top;
+            var upn = -1 *($(window).scrollTop()-$("#his_scroll_wr").offset().top + 100);
+
+            if ($(window).scrollTop() +100 >= his) {
+                $(".his_scroll_in").stop().animate({ marginLeft: 0 + upn }, 1000);
+                $(".his_scroll_in").addClass("fix")
+            } else {
+                $(".his_scroll_in").stop().animate({ marginLeft: 0 }, "slow");
+                $(".his_scroll_in").removeClass("fix")
+            }
+            });
