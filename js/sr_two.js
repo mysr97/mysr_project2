@@ -64,7 +64,7 @@ $(window).scroll(function () {
             }
         });
 
-        // 
+        // history 스크롤
         $(window).on("scroll",function(){
             var his = $("#his_scroll_wr").offset().top;
             var upn = -1 *($(window).scrollTop()-$("#his_scroll_wr").offset().top + 100);
